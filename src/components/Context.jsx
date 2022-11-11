@@ -4,7 +4,6 @@ import { useRef, useState, useEffect, createContext } from 'react'
 const Context = createContext({})
 
 export const DataProvider = ({ children }) => {
-
     const input = useRef(0)
     const [texts, setTexts] = useState([])
 
