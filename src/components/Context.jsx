@@ -21,7 +21,7 @@ export const DataProvider = ({ children }) => {
     const onCopy = async value => {
         try {
             await navigator.clipboard.writeText(value)
-            setCopy('Copied!')
+            setCopy("Copied!")
             setTimeout(() => {
                 setCopy(<FaCopy />)
             }, 2000)
