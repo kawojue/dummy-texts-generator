@@ -40,7 +40,7 @@ input {
 }
 
 .btn {
-  @apply px-3 py-0.5 rounded-md bg-pry-clr-3 trans-all-linear;
+  @apply px-3 py-1 rounded-md bg-pry-clr-3 trans-all-linear;
 }
 
 .btn:hover {
