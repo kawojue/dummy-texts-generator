@@ -1,13 +1,10 @@
-const Input = ({ input }) => {
-
-    const submit = (e) => {
-        e.preventDefault()
-        console.log(input.current.value)
-    }
-
+const Input = ({ input, submit }) => {
     return (
         <form onSubmit={(e) => submit(e)}>
-            <input type="number" ref={input} min={0} max={9} />
+            <div>
+                <label htmlFor="size">paragraphs: </label>
+                <input type="number" ref={input} min={0} max={9} autoFocus id="size" />
+            </div>
             <button className="btn">generate</button>
         </form>
     )
