@@ -40,7 +40,7 @@ input {
 }
 
 .btn {
-  @apply px-3 py-1 rounded-md bg-pry-clr-3 trans-all-linear;
+  @apply px-2 py-1 rounded-md bg-pry-clr-3 trans-all-linear;
 }
 
 .btn:hover {
@@ -49,6 +49,14 @@ input {
 
 .paragraph {
   @apply w-full flex flex-col items-center text-center gap-5;
+}
+
+.paragraph div {
+  @apply flex gap-3;
+}
+
+.paragraph div .btn {
+  @apply h-fit self-end;
 }
 
 .p-tag {
