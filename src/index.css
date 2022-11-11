@@ -6,12 +6,16 @@ body {
   @apply font-poppins bg-pry-clr-0;
 }
 
+.trans-all-linear {
+  @apply transition-all duration-200 ease-linear;
+}
+
 #root {
   @apply mb-9 mt-16;
 }
 
-.trans-all-linear {
-  @apply transition-all duration-200 ease-linear;
+main {
+  @apply w-[90vw] max-w-[600px] mx-auto trans-all-linear;
 }
 
 h1,
@@ -20,7 +24,7 @@ h1,
 }
 
 h1 {
-  @apply text-center text-4xl font-semibold;
+  @apply text-center text-2xl font-semibold;
 }
 
 form {
@@ -41,4 +45,12 @@ input {
 
 .btn:hover {
   @apply bg-pry-clr-4 text-pry-clr-3
+}
+
+.paragraph {
+  @apply w-full flex flex-col items-center text-center gap-5;
+}
+
+.p-tag {
+  @apply text-pry-clr-2 text-sm font-light;
 }
