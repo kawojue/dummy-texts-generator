@@ -1,4 +1,9 @@
-const Input = ({ input, submit }) => {
+import Context from './Context'
+import { useContext } from 'react'
+
+const Input = () => {
+    const { input, submit } = useContext(Context)
+
     return (
         <form onSubmit={(e) => submit(e)}>
             <div>
