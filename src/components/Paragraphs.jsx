@@ -6,13 +6,19 @@ const Paragraphs = () => {
 
     return (
         <section>
-            <article>
-                {texts.map((text, index) => (
-                    <p className="p-tag" key={index}>
-                        {text}
+            {texts.length !== 0 ?
+                <article className="paragraph">
+                    {texts.map((text, index) => (
+                        <p className="p-tag md:text-[0.9rem]" key={index}>
+                            {text}
+                        </p>
+                    ))}
+                </article> :
+                <article className="paragraph">
+                    <p className="p-tag md:text-[0.9rem]">
+                        No text.
                     </p>
-                ))}
-            </article>
+                </article>}
         </section>
     )
 }
