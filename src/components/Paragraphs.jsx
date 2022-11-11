@@ -1,4 +1,9 @@
-const Paragraphs = ({ texts }) => {
+import Context from './Context'
+import { useContext } from 'react'
+
+const Paragraphs = () => {
+    const { texts } = useContext(Context)
+
     return (
         <section>
             <article>
