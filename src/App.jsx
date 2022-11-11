@@ -19,7 +19,7 @@ const App = () => {
   return (
     <main>
       <header>
-        <h1>generate dummy texts</h1>
+        <h1 className="md:text-4xl">generate dummy texts</h1>
       </header>
       <Input submit={submit} input={input} />
       <Paragraphs texts={texts} />
