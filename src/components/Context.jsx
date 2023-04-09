@@ -11,7 +11,7 @@ export const DataProvider = ({ children }) => {
 
     useEffect(() => {
         input.current.value = 0
-    }, []) // becomes zero once the page reloads.
+    }, []) // becomes zero once the page loads.
 
     const submit = (e) => {
         e.preventDefault()
